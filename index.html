@@ -14,7 +14,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>半忆</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="icon" type="image/jpeg" href="source/favicon.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
@@ -29,8 +29,11 @@
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
     
+
 </head>
 
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8">
+</script>
 
 <body>
     <header class="navbar-fixed">
@@ -100,17 +103,6 @@
       <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
       
       <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
     </a>
     
   </li>
@@ -195,17 +187,6 @@
           
         </li>
         
-<li class="m-nav-item">
-			
-				<a href="/friends" class="waves-effect waves-light">
-					
-					<i class="fa-fw fas fa-address-book"></i>
-					
-					友情链接
-				</a>
-          
-        </li>
-        
         
     </ul>
 </div>
@@ -281,7 +262,7 @@
         <div class="brand">
             <div class="title center-align">
                 
-                subtitle
+                半忆’s Blog
                 
             </div>
 
@@ -291,7 +272,7 @@
                 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
                 <script>
                     var typed = new Typed("#typed", {
-                        strings: ['从来没有真正的绝境, 只有心灵的迷途', 'Never really desperate, only the lost of the soul'],
+                        strings: ['从来没有真正的绝境, 只有心灵的迷途。', 'Never really desperate, only the lost of the soul.'],
                         startDelay: 300,
                         typeSpeed: 100,
                         loop: true,
@@ -319,10 +300,6 @@
                 </a>
 
                 
-                <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light btn" target="_blank">
-                    <i class="fab fa-github-alt"></i>Github
-                </a>
-                
             </div>
             <div class="cover-social-link">
 
@@ -338,10 +315,6 @@
 
 
 
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
 
 </div>
         </div>
@@ -403,6 +376,41 @@ $(function () {
                     
 
                     
+                        
+
+<link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<div class="music-player">
+    
+    <div class="title center-align">
+        <i class="fas fa-music"></i>&nbsp;&nbsp;听听音乐
+    </div>
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
+            <div id="aplayer" class="music"></div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script>
+$(function () {
+    new APlayer({
+        container: document.getElementById('aplayer'),
+        fixed: 'false' === 'true',
+        autoplay: 'true' === 'true',
+        theme: '#42b983',
+        loop: 'all',
+        order: 'list',
+        preload: 'auto',
+        volume: Number('0.7'),
+        listFolded: 'true' === 'true',
+        listMaxHeight: '',
+        audio: JSON.parse('[{"name":"Beginning of Anything","artist":"Quigley","url":"http://music.163.com/song/media/outer/url?id=433223220.mp3","cover":"http://p2.music.126.net/6bEVx02vtUtfsMt_KDi12g==/18759867393548045.jpg?param=130y130"},{"name":"你走以后1.0","artist":"王恩信Est / 二胖u","url":"http://music.163.com/song/media/outer/url?id=1363205817.mp3","cover":"http://p1.music.126.net/n6_HOUCgBfk46D-9OCwyeQ==/109951164049623941.jpg?param=130y130"},{"name":"Beijing","artist":"接个吻，开一枪 / CLARE","url":"http://music.163.com/song/media/outer/url?id=455382413.mp3","cover":"http://p1.music.126.net/kXdnUtl-eVQcA15xDlSZWg==/109951163859434668.jpg?param=130y130"}]')
+    });
+});
+</script>
+                    
 
                     
 
@@ -423,6 +431,54 @@ $(function () {
     <!-- 所有文章卡片 -->
     <article id="articles" class="container articles">
         <div class="row article-row">
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/10/06/Love-0/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Love">
+                            
+                            <span class="card-title">Love</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                My first blog.
+
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-06
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/love/" class="post-category">
+                                    love
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/love/">
+                            <span class="chip bg-color">love</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
@@ -513,7 +569,7 @@ $(function () {
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">73</span>&nbsp;字
+                class="white-color">76</span>&nbsp;字
             
             
             
@@ -593,10 +649,6 @@ $(function () {
 
 
 
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
 
 </div>
     </div>
@@ -694,8 +746,6 @@ $(function () {
 
     
 
-    
-    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
     
     
     
