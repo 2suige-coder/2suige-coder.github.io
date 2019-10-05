@@ -288,8 +288,7 @@
 
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/1.jpg)');
 </script>
 
 
@@ -401,7 +400,7 @@ $(function () {
         autoplay: 'true' === 'true',
         theme: '#42b983',
         loop: 'all',
-        order: 'list',
+        order: 'random',
         preload: 'auto',
         volume: Number('0.7'),
         listFolded: 'true' === 'true',
@@ -712,8 +711,6 @@ $(function () {
     })();
 </script>
 
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
     
     
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
